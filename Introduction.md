@@ -3,6 +3,10 @@
 <p><b>Correo Institucional: </b> <a href="daalvarezr@eafit.edu.co"> daalvarezr@eafit.edu.co</a></p>
 <p><u>bla bla bla</u></p>
 <p>sin comentarios</p>
+# esto
+## aquello
+### aquel otro
+## Hobby (pasatiempo) 🚴🏻‍♀️ 🎵
 
 # personal
 alo
