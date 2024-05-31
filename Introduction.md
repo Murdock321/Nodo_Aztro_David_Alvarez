@@ -9,7 +9,7 @@
 ## Hobby (pasatiempo) 🚴🏻‍♀️ 🎵
 
 # personal
-alo
+los charts sirven para realizar links gracias a VScode
 
 ## Quizas este si
-A lo mejor este funciona
+Esto es un ejemplo
