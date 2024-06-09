@@ -9,10 +9,11 @@
 </head>
 <header>
   <h2>Formulario de Inscripcion</h2>
+  <p>Los espacios que poseen asterisco (*) son obligatorios</p>
 </header>
 
 <body>
-  <form action="post">
+  <form action="post" method="post">
     <fieldset>
       <legend><b>Ingrese sus datos</b></legend>
       <label>Nombre: <input aria-required="true" id="first_name" name="first_name" placeholder="Pepito"/></label>*<br/>
@@ -23,8 +24,66 @@
 
     <fieldset>
       <legend><b>Lugar de residencia</b></legend>
-      <label>Pais: <input aria-required="true" type="email" name="email" placeholder="Ej pepito.ruiz@gmail.com"/></label>*<br/>
-      <label>Departamento: <input type="email" name="email" placeholder="Ej pepito.ruiz@gmail.com"/></label><br/>
+      <label>Pais: </label>*<br/>
+      <select name="pais" id="pais">
+        <option value=""selected disabled>--Seleccione--</option>
+        <option value="">Canada</option>
+        <option value="">Mexico</option>
+        <option value="">Honduras</option>
+        <option value="">Salvador</option>
+        <option value="">Costa Rica</option>
+        <option value="">Republica Dominicana</option>
+        <option value="">Panama</option>
+        <option value="">Colombia</option>
+        <option value="">Venezuela</option>
+        <option value="">Brasil</option>
+        <option value="">Peru</option>
+        <option value="">Ecuador</option>
+        <option value="">Bolivia</option>
+        <option value="">Uruguay</option>
+        <option value="">Paraguay</option>
+        <option value="">Chile</option>
+        <option value="">Argentina</option>
+      </select><br/>
+
+      <label>Departamento: </label>*<br/>
+      <select name="departamento" id="departamento">
+        <option value=""selected disabled>--Seleccione--</option>
+        <option value="Amazonas">Amazonas</option>
+        <option value="Antioquia">Antioquia</option>
+        <option value="Arauca">Arauca</option>
+        <option value="Atlántico">Atlántico</option>
+        <option value="Bogotá, D.C.">Bogotá, D.C.</option>
+        <option value="Bolívar">Bolívar</option>
+        <option value="Boyacá">Boyacá</option>
+        <option value="Caldas">Caldas</option>
+        <option value="Caquetá">Caquetá</option>
+        <option value="Casanare">Casanare</option>
+        <option value="Cauca">Cauca</option>
+        <option value="Cesar">Cesar</option>
+        <option value="Chocó">Chocó</option>
+        <option value="Córdoba">Córdoba</option>
+        <option value="Cundinamarca">Cundinamarca</option>
+        <option value="Guainía">Guainía</option>
+        <option value="Guaviare">Guaviare</option>
+        <option value="Huila">Huila</option>
+        <option value="La Guajira">La Guajira</option>
+        <option value="Magdalena">Magdalena</option>
+        <option value="Meta">Meta</option>
+        <option value="Nariño">Nariño</option>
+        <option value="Norte de Santander">Norte de Santander</option>
+        <option value="Putumayo">Putumayo</option>
+        <option value="Quindío">Quindío</option>
+        <option value="Risaralda">Risaralda</option>
+        <option value="San Andrés y Providencia">San Andrés y Providencia</option>
+        <option value="Santander">Santander</option>
+        <option value="Sucre">Sucre</option>
+        <option value="Tolima">Tolima</option>
+        <option value="Valle del Cauca">Valle del Cauca</option>
+        <option value="Vaupés">Vaupés</option>
+        <option value="Vichada">Vichada</option>
+      </select><br/><br/>
+
       <label>Ciudad: <input type="email" name="email" placeholder="Ej Bello"/></label><br/>
       <label>Direccion: <input type="email" name="email" placeholder="Cr 1 #3-4"/></label><br/>
     </fieldset><br/>
@@ -32,51 +91,43 @@
       <legend><b>Acerca de ti</b></legend>
       <p>Escribe una pequeña reseña acerca de ti para conocernos mejor (Hobbies, videojuegos favoritos entre otros)</p>
       <textarea name="aboutyou" id="aboutyou" rows="10" cols="100" maxlength="300" placeholder="Maximo 300 caracteres"></textarea>
-    </fieldset>
+    </fieldset><br/>
 
     <fieldset>
+      <!--colocar el asterisco para mencionar que es obligatorio-->
       <legend><b>A que te deseas inscribir?</b></legend>
       <select name="courses" id="courses" aria-required="true">
-        <option value="HTML">Selecciona</option>
-        <option value="">Jobs to be done</option>
-        <option value="">Claud Native</option>
-        <option value="">Frontend</option>
-        <option value="">Backend</option>
-        <option value="">Fundamentals</option>
-        <option value="">Python</option>
-        <option value="">Marketing digital</option>
+        <option value="HTML" selected disabled>--Seleccione--</option>
+        <option value="jtbd">Jobs to be done</option>
+        <option value="cloud">Cloud Native</option>
+        <option value="front">Frontend</option>
+        <option value="back">Backend</option>
+        <option value="fundamentals">Fundamentals</option>
+        <option value="python">Python</option>
+        <option value="mdigital">Marketing digital</option>
       </select>
-    </fieldset>
+    </fieldset><br/>
 
     <fieldset>
       <legend><b>Que modalidad deseas ?</b></legend>
       <select name="modalidad" id="modalidad">
-        <option value="">Presencial</option>
-        <option value="">Online</option>
+        <option value="HTML" selected disabled>--Seleccione--</option>
+        <option value="presencial">Presencial</option>
+        <option value="virtual">Online</option>
       </select>
-    </fieldset>
+    </fieldset><br/>
+    <Fieldset>
+      <Legend><b>Esta trabajando actualmente?</b></Legend>
+      <div>
+        <input type="radio" id="trabajosi" name="trabajosi"/>
+        <label for="si">Si</label>
+        <input type="radio" id="trabajono" name="trabajono"/>
+        <label for="no">No</label>
+      </div>
+    </Fieldset><br/>
+
+    <button type="submit">Enviar</button> 
+    <button type="reset">Limpiar</button>
   </form>
-  
 </body>
 </html>
-
-<form action="post">
-<label for="firstName">First name:</label>
-<input id="firstName" type="text" aria-required="true" />
-<br />
-</form>
-
-
-margin-right=auto y margin-left=auto ---centrar
-
-
-
-3.modalidad oblig
-presencial
-online
-
-4. estas trabajando actualmente?
-
-5 botones para setear y enviar formulario
-
-
