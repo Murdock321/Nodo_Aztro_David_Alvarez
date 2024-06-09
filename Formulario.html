@@ -7,67 +7,69 @@
     <link rel="shortcut icon" href="./gorilla.png" />
     <title>Formulario de Inscripcion</title>
 </head>
+<header>
+  <h2>Formulario de Inscripcion</h2>
+</header>
+
 <body>
-    
+  <form action="post">
+    <fieldset>
+      <legend><b>Ingrese sus datos</b></legend>
+      <label>Nombre: <input aria-required="true" id="first_name" name="first_name" placeholder="Pepito"/></label>*<br/>
+      <label>Apellido: <input aria-required="true" type="text" id="last_name" name="last_name" placeholder="Ruiz"/></label>*<br/>
+      <label>Correo: <input aria-required="true" type="email" name="email" placeholder="Ej pepito.ruiz@gmail.com"/></label>*<br/>
+      <label>Escriba de nuevo su correo: <input aria-required="true" type="email" name="email" placeholder="Ej pepito.ruiz@gmail.com" autocomplete="off"/></label>*<br/>
+    </fieldset><br/>
+
+    <fieldset>
+      <legend><b>Lugar de residencia</b></legend>
+      <label>Pais: <input aria-required="true" type="email" name="email" placeholder="Ej pepito.ruiz@gmail.com"/></label>*<br/>
+      <label>Departamento: <input type="email" name="email" placeholder="Ej pepito.ruiz@gmail.com"/></label><br/>
+      <label>Ciudad: <input type="email" name="email" placeholder="Ej Bello"/></label><br/>
+      <label>Direccion: <input type="email" name="email" placeholder="Cr 1 #3-4"/></label><br/>
+    </fieldset><br/>
+    <fieldset>
+      <legend><b>Acerca de ti</b></legend>
+      <p>Escribe una pequeña reseña acerca de ti para conocernos mejor (Hobbies, videojuegos favoritos entre otros)</p>
+      <textarea name="aboutyou" id="aboutyou" rows="10" cols="100" maxlength="300" placeholder="Maximo 300 caracteres"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend><b>A que te deseas inscribir?</b></legend>
+      <select name="courses" id="courses" aria-required="true">
+        <option value="HTML">Selecciona</option>
+        <option value="">Jobs to be done</option>
+        <option value="">Claud Native</option>
+        <option value="">Frontend</option>
+        <option value="">Backend</option>
+        <option value="">Fundamentals</option>
+        <option value="">Python</option>
+        <option value="">Marketing digital</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend><b>Que modalidad deseas ?</b></legend>
+      <select name="modalidad" id="modalidad">
+        <option value="">Presencial</option>
+        <option value="">Online</option>
+      </select>
+    </fieldset>
+  </form>
+  
 </body>
 </html>
-
-   
-   <!--para llenar el forms -->
-
-   <label for="name">
-    Name
-  </label>
-  <input type="text" id="name" /> <br />
-  <!--para llenar el forms -->
-</body>
-</html>
-
-<label for="name">
-Primer Nombre:
-</label>
-<input id="firstName" type="text" aria-required="true" />
-Nombre: 
-<input type="text" name="first_name" required>
 
 <form action="post">
 <label for="firstName">First name:</label>
 <input id="firstName" type="text" aria-required="true" />
 <br />
-<label for="lastName">Last name:</label>
-<input id="lastName" type="text" aria-required="true" />
-<br />
-<label for="streetAddress">Street address:</label>
-<input id="streetAddress" type="text" />
 </form>
 
 
-actividad 1 de formulario y realizar index para todas las actividades y linkear
-<label>Click me <input type="text" id="Name" name="Name" /></label>
-
-
-
 margin-right=auto y margin-left=auto ---centrar
-<input type="email" name="email" placeholder="Por ejemplo, juan@dominio.com">
-
-1.Datos:
-nombre oblig
-apellido oblig
-correo oblig
-direccion
-departamento
-pais oblig
-descripcion personal no mas de 300 caracteres
 
 
-2. a que carrera deseas inscribirte? oblig
-jobs to be done
-calud native
-frontend
-backend
-fundamentals
-python
-marketing digital
 
 3.modalidad oblig
 presencial
