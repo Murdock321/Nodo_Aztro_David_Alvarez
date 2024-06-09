@@ -7,7 +7,9 @@
     <link rel="shortcut icon" href="./gorilla.png" />
     <title>Formulario de Inscripcion</title>
 </head>
+
 <header>
+  <a href="./index.html"><img src="./gorilla_7336335.png" alt="pura pagina de gorila" width="100" height="100"/></a>
   <h2>Formulario de Inscripcion</h2>
   <p>Los espacios que poseen asterisco (*) son obligatorios</p>
 </header>
@@ -95,7 +97,8 @@
 
     <fieldset>
       <!--colocar el asterisco para mencionar que es obligatorio-->
-      <legend><b>A que te deseas inscribir?</b></legend>
+      <legend><b>Programa</b></legend>
+      <label for="curso">Escoge el programa al que deseas inscribirte*</label><br>
       <select name="courses" id="courses" aria-required="true">
         <option value="HTML" selected disabled>--Seleccione--</option>
         <option value="jtbd">Jobs to be done</option>
@@ -110,6 +113,7 @@
 
     <fieldset>
       <legend><b>Que modalidad deseas ?</b></legend>
+      <label for="pres-virtual">Escoge la modalidad en la que desea recibir tu formacion*</label><br>
       <select name="modalidad" id="modalidad">
         <option value="HTML" selected disabled>--Seleccione--</option>
         <option value="presencial">Presencial</option>
@@ -128,6 +132,7 @@
 
     <button type="submit">Enviar</button> 
     <button type="reset">Limpiar</button>
-  </form>
+  </form><br/>
+  <p><a href="./index.html">Regresar a la ventana principal</a></p>
 </body>
 </html>
